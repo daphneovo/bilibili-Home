@@ -1,0 +1,25 @@
+.container {
+    height: 250px;
+    background-color: orange;
+}
+.header-flex {
+    display: flex;
+    gap: 40px;
+    padding-top: 15px;
+}
+.header-left-nav ul,
+.header-right-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.header-left-nav a,
+.header-right-nav a {
+    text-decoration: none;
+    color: white;
+}
+.header-left-nav li,
+.header-right-nav li {
+    margin-left: 30px;
+}
