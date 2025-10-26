@@ -1,50 +1,86 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-    <head>
-        <link href="css/index.css" rel="stylesheet"/>
-        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-        <title>哔哩哔哩</title>
-    </head>
-    <body>
-        <!-- bilibili首页页头 -->
-        <div class="header">
-            <div class="container header-flex">
-                <!-- 左导航 -->
-                <div class="header-left-nav">
-                    <ul>
-                        <li><a href="#">首页</a></li>
-                        <li><a href="#">番剧</a></li>
-                        <li><a href="#">直播</a></li>
-                        <li><a href="#">游戏中心</a></li>
-                        <li><a href="#">会员购</a></li>
-                        <li><a href="#">漫画</a></li>
-                        <li><a href="#">赛事</a></li>
-                        <li><a href="#">科学晚</a></li>
-                        <li><a href="#">畅玩S15</a></li>
-                        <li><a href="#">下载客户端</a></li>
-                    </ul>
-                </div>
-                <!-- 搜索框 -->
-                <div class="header-search">
-                    <form action="#" method="get">
-                        <button type="submit">搜索</button>
-                        <input type="text" name="question" placeholder="请输入你要搜素的内容">
-                    </form>
-                </div>
-                <!-- 右导航 -->
-                <div class="header-right-nav">
-                    <ul>
-                        <li><a href="#"><img src="#" alt="头像"></a></li>
-                        <li><a href="#">大会员</a></li>
-                        <li><a href="#">消息</a></li>
-                        <li><a href="#">动态</a></li>
-                        <li><a href="#">收藏</a></li>
-                        <li><a href="#">历史</a></li>
-                        <li><a href="#">创作中心</a></li>
-                        <li><a href="#">投稿</a></li>
-                    </ul>
-                </div>
+
+<head>
+    <link href="css/index.css" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>哔哩哔哩</title>
+</head>
+
+<body>
+    <!-- bilibili首页页头 -->
+    <div class="header">
+        <div class="container header-flex">
+            <!-- 左导航 -->
+            <div class="header-left-nav">
+                <ul>
+                    <li><a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="shouye">
+                                <!-- 电视屏幕 -->
+                                <rect x="4" y="4" width="16" height="12" rx="3" stroke="currentColor" stroke-width="2"
+                                    fill="none" />
+
+                                <!-- 屏幕内容（模拟播放效果） -->
+                                <ellipse cx="10" cy="10" r="1" rx="0.8" ry="1.5" stroke="none" fill="currentColor" />
+                                <ellipse cx="14" cy="10" r="1" rx="0.8" ry="1.5" stroke="none" fill="currentColor" />
+                                <!-- 天线 -->
+                                <!-- <line x1="10" y1="4" x2="10" y2="1" stroke="currentColor" stroke-width="2"/>
+                                <line x1="14" y1="4" x2="14" y2="1" stroke="currentColor" stroke-width="2"/> -->
+                                <path d="M9 1 L11 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <path d="M13 4 L15 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                            首页
+                        </a></li>
+                    <li><a href="#">番剧</a></li>
+                    <li><a href="#">直播</a></li>
+                    <li><a href="#">游戏中心</a></li>
+                    <li><a href="#">会员购</a></li>
+                    <li><a href="#">漫画</a></li>
+                    <li><a href="#">赛事</a></li>
+                    <li><a href="#">科学晚</a></li>
+                    <li><a href="#" class="s15">畅玩S15</a></li>
+                    <li><a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <!-- 带缺口的外框 -->
+                                <path d="M4 4 H8 L10 6 L14 6 H16 V16 H4 Z" stroke="currentColor" stroke-width="2"
+                                    fill="none" />
+
+                            </svg>
+                            下载客户端
+                        </a></li>
+                </ul>
+            </div>
+            <!-- 搜索框 -->
+            <div class="header-search">
+                <form action="#" method="get">
+                    <input type="text" name="question" placeholder="请输入你要搜素的内容">
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="8" fill="none" stroke="black" stroke-width="2" />
+                            <!-- 手柄斜线 -->
+                            <!-- <path d="M16 18 L60 60" stroke="black" stroke-width="2" fill="none" stroke-linecap="round" /> -->
+                            <line x1="16" y1="18" x2="60" y2="60" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <!-- 右导航 -->
+            <div class="header-right-nav">
+                <ul>
+                    <li><a href="#"><img src="images/头像.jpg" alt="用户头像" class="avater"></a></li>
+                    <li><a href="#">大会员</a></li>
+                    <li><a href="#">消息</a></li>
+                    <li><a href="#">动态</a></li>
+                    <li><a href="#">收藏</a></li>
+                    <li><a href="#">历史</a></li>
+                    <li><a href="#">创作中心</a></li>
+                    <li><a href="#" class="submission">投稿</a></li>
+                </ul>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

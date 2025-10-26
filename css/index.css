@@ -19,7 +19,73 @@
     text-decoration: none;
     color: white;
 }
+.header-left-nav .shouye {
+    vertical-align: middle;
+}
+.header-left-nav .s15 {
+    /* 基础样式 */
+    display: inline-block;
+    padding: 6px 12px;           /* 内边距，让文字不贴边 */
+    font-size: 16px;
+    font-weight: bold;
+    color: white;                /* 白色文字 */
+    text-align: center;
+    border-radius: 8px;
+    /* 渐变背景 */
+    background: linear-gradient(135deg, #007aff, #87b8f0);
+    /* 发光效果（外发光） */
+    box-shadow: 
+    0 0 8px rgba(0, 122, 255, 0.6),
+    0 0 16px rgba(0, 122, 255, 0.4),
+    0 0 24px rgba(0, 122, 255, 0.3);
+    /* 鼠标悬停时增强发光 */
+    transition: all 0.3s ease;
+    font-family: '新宋体';
+}
+.header-left-nav .s15:hover {
+    box-shadow: 
+    0 0 12px rgba(0, 122, 255, 0.8),
+    0 0 24px rgba(0, 122, 255, 0.6),
+    0 0 36px rgba(0, 122, 255, 0.4);
+}
 .header-left-nav li,
 .header-right-nav li {
     margin-left: 30px;
+}
+.header-search form {
+    display: flex;
+    gap: 0;
+}
+.header-search input,
+.header-search button {
+    display: inline-block;
+    background-color: rgba(169, 169, 169, 0.9);
+    width: 250px;
+    height: 55px;
+    border-radius: 7px;
+    border: 0;
+}
+.header-search button {
+    width: 50px;
+}
+.header-search input {
+    padding-left: 20px;
+}
+.header-right-nav .avater {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    overflow: hidden;
+    object-fit: cover;
+}
+.header-right-nav .submission {
+    display: inline-block;
+    width: 110px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #fb7299;
+    border-radius: 10px;
 }
