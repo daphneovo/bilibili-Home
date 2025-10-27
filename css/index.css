@@ -48,6 +48,9 @@
     0 0 24px rgba(0, 122, 255, 0.6),
     0 0 36px rgba(0, 122, 255, 0.4);
 }
+.header-left-nav .xiazai {
+    vertical-align: middle;
+}
 .header-left-nav li,
 .header-right-nav li {
     margin-left: 30px;
@@ -67,6 +70,7 @@
 }
 .header-search button {
     width: 50px;
+    padding-bottom: 0;
 }
 .header-search input {
     padding-left: 20px;
